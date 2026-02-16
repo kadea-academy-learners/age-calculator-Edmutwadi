@@ -1,15 +1,11 @@
 import datetime
 
 def main():
-    birth_year = 0  
+    birth_year = int(input("Entrer votre année de naissance : "))
+    current_year = datetime.date.today().year
+    age = current_year - birth_year
 
-    current_year = 0 
-
-    age = 0
-
-    print("--------------------")
-    print(f"Current Year: {current_year}")
-    print(f"You are approximately {age} years old.")
+    print(f"votre age actuel est {age} ans")
 
 if __name__ == "__main__":
     main()
